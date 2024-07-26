@@ -6,17 +6,17 @@
 
     <div class="formular-container">
 
-        <form id="formular">
+        <div id="formular">
             
             <h3>Programeaza-te</h3>
 
-            <input type="text" id="nume" placeholder="Nume" required><br>
-            <input type="text" id="nume" placeholder="Prenume" required><br>
-            <input type="email" id="email" placeholder="Email" required><br>
-            <textarea id="mesaj" rows="4" placeholder="Mesaj" required></textarea><br>
+            <input type="text" v-model="nume" placeholder="Nume" required><br>
+            <input type="text" v-model="prenume" placeholder="Prenume" required><br>
+            <input type="email" v-model="email" placeholder="Email" required><br>
+            <textarea v-model="mesaj" rows="4" placeholder="Mesaj" required></textarea><br>
             <input type="submit" value="Transmite">
 
-        </form>
+        </div>
 
     </div>
 
@@ -29,9 +29,37 @@
 </template>
 
 <script>
+//import
+
     export default {
-        
+        data() {
+            return {
+                nume: "",
+                prenume:"",
+                email:"",
+                mesaj:""
+
+            }
+
+        },
+        methods:{
+            submitFormHandler(event) {
+                const newProgram = {
+                    name: this.nume,
+                    surname: this.prenume,
+                    email: this.email,
+                    message: this.mesaj
+                }
+                myaxios.post("/program", newProgram).then((response) =>{
+                    console.log(response)
+                })
+            }
+        }
+
     }
+
+       
+    
 </script>
 
 <style scoped>
