@@ -1,0 +1,91 @@
+body {
+    font-family: "Arvo", serif;
+    background-color: hsla(95.42, 50%, 65.1%, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #8cbc6a;
+    padding: 60px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #8cbc6a;
+}
+
+label {
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+input[type="text"], textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.rating {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+    gap: 7px;
+}
+
+.rating input[type="radio"] {
+    display: none;
+}
+
+.rating label {
+    width: 30px;
+    height: 30px;
+    background: url('Img/star.png') no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.rating input[type="radio"]:checked ~ label {
+    background: url('Img/star_changed.png') no-repeat center center;
+    background-size: contain;
+}
+
+.rating label:hover, .rating label:hover ~ label {
+    background: url('Img/star_changed.png') no-repeat center center;
+    background-size: contain;
+}
+
+button {
+    padding: 10px;
+    background-color: #2b401d;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #79a05d;
+}
