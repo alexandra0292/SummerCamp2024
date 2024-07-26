@@ -1,0 +1,51 @@
+# ignore ALL .log files
+*.log
+
+# ignore ALL files in ANY directory named temp
+temp/
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+*.log
+
+# Directories for build artifacts
+dist/
+build/
+out/
+
+# Vue.js specific files
+*.local
+*.env
+*.env.local
+*.env.*.local
+.vuepress/dist
+.vuepress/.temp
+
+# Dependency directories
+node_modules/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Local environment configuration
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Exclude any local environment files (customizable)
+.env.local
+.cache/
+.history/
+
+# Ignore any secret configuration files
+secrets.yml
+.secret.env
+
+# Miscellaneous
+*.bak
+*.tmp
+*.temp
