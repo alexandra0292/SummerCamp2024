@@ -48,9 +48,10 @@ textarea {
 
 .rating {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     margin-bottom: 15px;
     gap: 7px;
+    flex-direction: row-reverse;
 }
 
 .rating input[type="radio"] {
