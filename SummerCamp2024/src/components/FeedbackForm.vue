@@ -117,8 +117,8 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 400px;
   text-align: center;
-  margin-top: 5%;
   margin-left: 33%;
+  margin-top: 5%;
 }
 
 .container label{

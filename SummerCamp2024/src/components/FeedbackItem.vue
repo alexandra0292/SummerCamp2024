@@ -1,4 +1,5 @@
 <template>
+<br><br>
     <div class="feedback-container">
         <div class="feedback-left">
             <img src=""/>
@@ -48,7 +49,6 @@
     border-radius: 8px;
     max-width: 40%;
     margin-bottom:4%;
-    margin-top:4%;
     font-size: 110%;
     margin-left: 2%;
 }
