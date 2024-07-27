@@ -43,5 +43,8 @@
 </script>
 
 <style scoped>
+div{
+    background-color: hsla(95.42, 50%, 65.1%, 0.1);
+}
 
 </style>

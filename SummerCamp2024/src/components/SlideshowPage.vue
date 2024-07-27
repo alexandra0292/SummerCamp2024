@@ -13,36 +13,36 @@
           <div class="numbertext">2 / 6</div>
           <img src="../assets/Img/cover2.jpg" style="width: 100%" />
           <div class="text">
-            Cine spune că are o singură viață de trăit acela nu știe cum se
-            citește o carte.
+            ~ Cine spune că are o singură viață de trăit acela nu știe cum se
+            citește o carte. ~
           </div>
         </div>
         <div v-else-if="slide == 2" class="mySlides fade">
           <div class="numbertext">3 / 6</div>
           <img src="../assets/Img/cover3.jpg" style="width: 100%" />
           <div class="text">
-            Lectura ne oferă destinații unde putem merge chiar dacă trebuie să
-            rămânem acolo unde suntem.
+            ~ Lectura ne oferă destinații unde putem merge chiar dacă trebuie să
+            rămânem acolo unde suntem. ~
           </div>
         </div>
         <div v-else-if="slide == 3" class="mySlides fade">
           <div class="numbertext">4 / 6</div>
           <img src="../assets/Img/cover4.jpg" style="width: 100%" />
           <div class="text">
-            O cameră fără cărţi este ca un corp fără suflet.
+            ~ O cameră fără cărţi este ca un corp fără suflet. ~
           </div>
         </div>
         <div v-else-if="slide == 4" class="mySlides fade">
           <div class="numbertext">5 / 6</div>
           <img src="../assets/Img/cover5.jpg" style="width: 100%" />
           <div class="text">
-            Cărţile sunt oglinzi: vezi în ele ceea ce ai deja înăuntrul tău.
+            ~ Cărţile sunt oglinzi: vezi în ele ceea ce ai deja înăuntrul tău. ~
           </div>
         </div>
         <div v-else class="mySlides fade">
           <div class="numbertext">6 / 6</div>
           <img src="../assets/Img/cover6.jpg" style="width: 100%" />
-          <div class="text">Niciodată nu judeca o carte după coperta ei.</div>
+          <div class="text">~ Niciodată nu judeca o carte după coperta ei.~ </div>
         </div>
         <a class="prev" @click="decrement">&#10094;</a>
         <a class="next" @click="increment">&#10095;</a>
@@ -169,5 +169,12 @@ img {
 }
 .dot:hover {
   background-color: #717171;
+}
+
+.text{
+  font-size: 20px;
+  font-style: italic;
+  margin-left: 2%;
+  
 }
 </style>

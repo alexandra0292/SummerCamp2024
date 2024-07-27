@@ -7,24 +7,24 @@
         <br>
             <div class="container2">
             <div class="box">
-                <p>Stabilește obiective clare: Definirea unor obiective specifice și realiste pentru
+                <p><b>Stabilește obiective clare:</b> <br>Definirea unor obiective specifice și realiste pentru
             fiecare sesiune de învățare te poate ajuta să te concentrezi și să îți măsori progresul.
             Împarte materialul în bucăți mici: Învățarea pe segmente mai mici și gestionabile face ca
             informațiile să fie mai ușor de reținut și de înțeles.</p>
             </div>
             <div class="box">
-                <p>Utilizează tehnica Pomodoro: Aceasta implică lucrul intens pentru 25 de minute urmat
+                <p><b>Utilizează tehnica Pomodoro:</b><br> Aceasta implică lucrul intens pentru 25 de minute urmat
             de o pauză de 5 minute. După patru sesiuni, ia o pauză mai lungă de 15-30 de minute.
             Folosește tehnici de memorare: Mnemotehnicile, cum ar fi acronimele sau asocierile vizuale,
             te pot ajuta să memorezi mai ușor informații complexe.</p>
             </div>
             <div class="box">
-                <p>Repetă și revizuiește: Repetiția periodică a materialului învățat ajută la consolidarea
+                <p><b>Repetă și revizuiește:</b><br> Repetiția periodică a materialului învățat ajută la consolidarea
             informațiilor în memorie pe termen lung. Fă conexiuni: Leagă informațiile noi de cunoștințele
             existente pentru a înțelege mai bine și a reține mai ușor.</p>
             </div>
             <div class="box">
-                <p>  Ia pauze regulate: Pauzele ajută la menținerea concentrării și la prevenirea oboselii mentale.
+                <p>  <b>Ia pauze regulate:</b><br> Pauzele ajută la menținerea concentrării și la prevenirea oboselii mentale.
                       Fii constant: Învățarea constantă, zilnică, este mai eficientă decât sesiuni de studiu intense și ocazionale.
                       Folosește resurse diverse: Cărți, articole, videoclipuri educative și cursuri online pot oferi perspective diferite și pot îmbogăți procesul de învățare.
                     </p>
@@ -44,10 +44,15 @@
 .stilizare-sectiune{
     padding: 0.5px 40px 40px;
     text-align: center;
+    
+    
 }
 #text1 {
     color: #2B401D;
     border: #75A653 solid;
+    border-radius: 10px; 
+    padding: 10px;
+    
 }
 #text2 {
     color: #2B401D;
@@ -59,6 +64,7 @@
     flex-direction: row;
     justify-content: center;
     gap: 20px;
+    
 }
 .box {
     background-color: #BEEF9B;
@@ -67,6 +73,11 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 200px;
-    text-align: left;
+    text-align: center;
 }
+
+.box b{
+    color: #2B401D;
+    font-size: 20px;
+    }
 </style>
