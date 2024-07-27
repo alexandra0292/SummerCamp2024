@@ -6,9 +6,9 @@
 
     <div class="header-content">
 
-        <a href="#">
-            <img src="../assets/Img/logo.png" alt="Logo">
-        </a>
+        <RouterLink to ="/"><img src="../assets/Img/logo.png" alt="Logo"></RouterLink>
+            
+    
 
         <h1>Invatam Sanatos</h1>
 
@@ -19,7 +19,7 @@
                 <li><a href="#">Info</a></li>
                 <li><a href="#">Apps</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="feedback1.html">Feedback</a></li>
+                <li><RouterLink to="/feedback">Feedback</RouterLink></li>
 
             </ul>
 

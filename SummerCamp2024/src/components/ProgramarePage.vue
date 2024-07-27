@@ -14,7 +14,7 @@
             <input type="text" v-model="prenume" placeholder="Prenume" required><br>
             <input type="email" v-model="email" placeholder="Email" required><br>
             <textarea v-model="mesaj" rows="4" placeholder="Mesaj" required></textarea><br>
-            <input type="submit" value="Transmite">
+            <input type="submit" @click="submitFormHandler" value="Transmite">
 
         </div>
 
@@ -29,7 +29,7 @@
 </template>
 
 <script>
-//import
+import { myaxios } from '@/axios'
 
     export default {
         data() {
@@ -53,6 +53,11 @@
                 myaxios.post("/program", newProgram).then((response) =>{
                     console.log(response)
                 })
+
+                this.nume = null;
+                this.prenume = null;
+                this.email = null;
+                this.mesaj = null;
             }
         }
 
