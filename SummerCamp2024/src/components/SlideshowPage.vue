@@ -86,9 +86,10 @@ export default {
 
 <style scoped>
 .slideshow-container {
-  max-width: 1500px;
+
   position: relative;
   filter: brightness(60%);
+
 }
 
 .containerf1 .text {
